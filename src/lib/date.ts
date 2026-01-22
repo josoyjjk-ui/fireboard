@@ -13,8 +13,9 @@ export function formatPeriod(startAt: string | null, endAt: string | null) {
   return "기간 미정";
 }
 
-export function statusLabel(status: "active" | "upcoming" | "ended") {
+export function statusLabel(status: "active" | "upcoming" | "ended" | "hidden") {
   if (status === "active") return "진행중";
   if (status === "upcoming") return "예정";
-  return "종료";
+  if (status === "ended") return "종료";
+  return "숨김";
 }
