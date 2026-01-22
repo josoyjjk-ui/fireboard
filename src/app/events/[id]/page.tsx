@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import ReactMarkdown from "react-markdown";
 import { getEventById } from "@/lib/events";
 import { formatPeriod } from "@/lib/date";
